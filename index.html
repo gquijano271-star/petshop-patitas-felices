@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas Felices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h1 class="logo">🐾 Patitas Felices</h1>
+
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <ul class="menu" id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+section class="hero" id="inicio">
+
+    <div class="video-frame">
+        <video autoplay muted loop playsinline class="video-bg" controls>
+            <source src="./video/de compras.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <div class="contenido-hero">
+        <h1>Nueva Colección</h1>
+        <p>Descubre lo último en tendencias</p>
+        <button class="btn-comprar">Ver Catálogo</button>
+    </div>
+
+<section class="testimonios" id="testimonios">
+    <h2>Lo que dicen nuestros clientes</h2>
+
+    <div class="carousel">
+        <div class="slide active">
+            <img src="imagenes/mariana.jpg" alt="Mariana" class="testimonial-img">
+            <p>"Mi perro sale feliz cada vez que viene a Patitas Felices 🐶"</p>
+            <h4>- Mariana</h4>
+        </div>
+
+        <div class="slide">
+            <img src="imagenes/carlos.jpg" alt="Carlos" class="testimonial-img">
+            <p>"Excelente atención y mucha dedicación con mi gato."</p>
+            <h4>- Carlos</h4>
+        </div>
+
+        <div class="slide">
+            <img src="imagenes/sofia.jpg" alt="Sofía" class="testimonial-img">
+            <p>"El mejor pet shop de la zona, súper recomendable ❤️"</p>
+            <h4>- Sofía</h4>
+        </div>
+
+        <!-- Flechas -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <!-- Puntitos -->
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <section class="sobre-nosotros" id="sobre">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>Patitas Felices</strong>, nos dedicamos a brindar el mejor cuidado para tus mascotas. Nuestro equipo está compuesto por profesionales apasionados por los animales, comprometidos con su bienestar y felicidad.</p>
+    <p>Desde baños y cortes de pelo hasta consultas veterinarias, ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades de tu mascota.</p>
+</section>
+<section class="servicios" id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="servicios-contenedor">
+        <div class="servicio">
+            <h3>Baños y Estética</h3>
+            <p>Deja que tu mascota luzca increíble con nuestros servicios de baño, corte de pelo y cuidado de uñas.</p>
+        </div>
+        <div class="servicio">
+            <h3>Consultas Veterinarias</h3>
+            <p>Atención médica profesional para garantizar la salud y bienestar de tu mascota.</p>
+        </div>
+        <div class="servicio">
+            <h3>Guardería</h3>
+            <p>Un lugar seguro y divertido para que tu mascota pase el día mientras tú trabajas.</p>
+        </div>
+    </div>
+</section>
+<section class="contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes preguntas o quieres agendar una cita? ¡Estamos aquí para ayudarte!</p>
+    <form action="#" method="post" class="formulario-contacto">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+        <textarea name="mensaje" placeholder="Tu Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
